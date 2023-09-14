@@ -233,7 +233,7 @@ header
 
 .header-area {
   box-shadow: none;
-  background-color: #000;
+  background-color: black;
   position: absolute;
   top: 0px;
   left: 0px;
