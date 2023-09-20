@@ -850,6 +850,8 @@ https://templatemo.com/tm-571-hexashop
     <script src="assets/js/custom.js"></script>
 
     <script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
         $(function() {
             var selectedClass = "";
@@ -865,7 +867,26 @@ https://templatemo.com/tm-571-hexashop
             });
         });
 
-        let slideIndex = 0;
+
+
+function plusSlides(n) {
+  showDivs(slideIndex += n);
+}
+
+
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+
 showSlides();
 
 function showSlides() {
@@ -877,7 +898,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
     </script>
