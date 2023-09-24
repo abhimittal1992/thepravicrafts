@@ -19,7 +19,6 @@
 
     <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
 
-  <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/owl-carousel.css">
 
     <link rel="stylesheet" href="assets/css/lightbox.css">
@@ -97,40 +96,31 @@ https://templatemo.com/tm-571-hexashop
     <!-- ***** Main Banner Area Start ***** -->
     <div class="main-banner" id="top">
         <div class="container-fluid">
+                     <div class="right-content">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="left-content">
-                        <div class="slideshow-container">
+                <div class="col-lg-12" style="padding-left: 0px !important;padding-right: 0px !important;">
+                        <div class="right-first-image">
+                        <div class="thumb">
+                                        <div class="inner-content">
+                                           <h3 style="font-size: 45px;"> Lets discover the magic of Art<h3>
+                                            <span style="color: black;">Premium home decors with affordable price</span>
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="assets/images/cs_red_1.JPG" style="width:100%">
-    <div class="text">Red Blush Candle</div>
-  </div>
+                                        </div>
+                                
+                                    <img src="assets/images/praavi_home.jpg" style="width:100%; height: 420px;margin-top: -5%;">
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="assets/images/hanging_2.JPG" style="width:100%">
-    <div class="text">Flower Hanging Toran</div>
-  </div>
+                                    </div></div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="assets/images/idol_2.JPG" style="width:100%">
-    <div class="text">Ganesha Idol</div>
-  </div>
+                </div></div>
+                    
+  
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
+            </div>
+         <div class="row" style="margin-top: 10px;">
+                <div class="col-lg-12">
                     <div class="right-content">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-3">
                                 <div class="right-first-image">
                                     <div class="thumb">
                                         <div class="inner-content">
@@ -151,7 +141,7 @@ https://templatemo.com/tm-571-hexashop
                                 </div>
                             </div>
                            
-                            <div class="col-lg-6">
+                            <div class="col-lg-3">
                                 <div class="right-first-image">
                                     <div class="thumb">
                                         <div class="inner-content">
@@ -171,7 +161,7 @@ https://templatemo.com/tm-571-hexashop
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-3">
                                 <div class="right-first-image">
                                     <div class="thumb">
                                         <div class="inner-content">
@@ -191,7 +181,7 @@ https://templatemo.com/tm-571-hexashop
                                     </div>
                                 </div>
                             </div>
-                             <div class="col-lg-6">
+                             <div class="col-lg-3">
                                 <div class="right-first-image">
                                     <div class="thumb">
                                         <div class="inner-content">
@@ -830,6 +820,7 @@ https://templatemo.com/tm-571-hexashop
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
 
+
     <!-- Bootstrap -->
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -849,59 +840,7 @@ https://templatemo.com/tm-571-hexashop
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
 
-    <script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-        $(function() {
-            var selectedClass = "";
-            $("p").click(function(){
-            selectedClass = $(this).attr("data-rel");
-            $("#portfolio").fadeTo(50, 0.1);
-                $("#portfolio div").not("."+selectedClass).fadeOut();
-            setTimeout(function() {
-              $("."+selectedClass).fadeIn();
-              $("#portfolio").fadeTo(50, 1);
-            }, 500);
-                
-            });
-        });
-
-
-
-function plusSlides(n) {
-  showDivs(slideIndex += n);
-}
-
-
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-
-
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
-}
-
-    </script>
+  <script src="assets/js/new.js"></script>
 
   </body>
 </html>
